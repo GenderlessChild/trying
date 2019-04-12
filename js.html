@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+</head>
+<body>
+  <span onmouseover="MouseOv (this)" >было наведено 0 раз</span>
+  <script type="text/javascript">
+    var MouseOv1 = 0;
+    function MouseOv (element) {
+      MouseOv1++;
+      element.innerHTML = "было наведено " + MouseOv1 + " раз";
+    }
+  </script>
+  <style media="screen">
+    span {
+      cursor: pointer;
+    }
+  </style>
+</body>
+</html>
